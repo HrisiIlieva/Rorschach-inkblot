@@ -1,1 +1,1 @@
-# Rorschach-inkblot
+# Rorschach-Inkblot Generator: A Math Explainer
