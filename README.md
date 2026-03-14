@@ -4,7 +4,7 @@ This project explores the intersection of geometry, symmetry theory, fractals, a
 ### 1. Geometric & Symmetry Model
 Each inkblot is modeled as a subset of the plane $B \subset \mathbb{R}^2$. The project analyzes the axial symmetry created by folding the paper, where 
 $$(x,y) \in B \implies (-x,y) \in B$$ 
-- Group Theory: The minimal symmetry group is the cyclic group $G \cong C_2$ , consisting of the identity $e$ and reflection $r$ , where $r^2=e$ .
+- Group Theory: The minimal symmetry group is the cyclic group $G \cong C_2$ , consisting of the identity $e$ and reflection $r$, where $r^2=e$ .
 - Bilateral Symmetry: All standard 10 cards are approximately bilaterally symmetric, which is a key property of the test.
 - Visual Perception: This symmetry triggers the brain to automatically search for bilateral structures, interpreting shapes as animals or faces.
 ### 2. Fractal Geometry
@@ -13,7 +13,7 @@ The contours of real inkblots are not smooth and are best described by their fra
 $$1.1 < D < 1.3$$
 or up to $1.6$
 - Calculation: The dimension is determined by
-$$D =\lim_{\epsilon \to 0} \frac{\log N(\epsilon)}{\log(1/\epsilon)}$$ ,
+ $$D =\lim_{\epsilon \to 0} \frac{\log N(\epsilon)}{\log(1/\epsilon)}$$ ,
 where $N(\epsilon)$ is the number of squares of size $\epsilon$ needed to cover the blot.
 - Cognitive Impact: This multi-scale structure makes the figure more complex than a line but less than a filled area, stimulating pattern recognition.
 ### 3. Probabilistic Perception & Topology
