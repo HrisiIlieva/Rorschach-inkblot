@@ -12,7 +12,7 @@ The contours of real inkblots are not smooth and are best described by their fra
 - Complexity Range: Research indicates that inkblots have fractal properties with typical values falling between
 $$1.1 < D < 1.3$$
 or up to $1.6$
-- Calculation: The dimension is determined by
+- Calculation: The dimension is determined by 
  $$D =\lim_{\epsilon \to 0} \frac{\log N(\epsilon)}{\log(1/\epsilon)}$$ ,
 where $N(\epsilon)$ is the number of squares of size $\epsilon$ needed to cover the blot.
 - Cognitive Impact: This multi-scale structure makes the figure more complex than a line but less than a filled area, stimulating pattern recognition.
@@ -23,7 +23,7 @@ where $N(\epsilon)$ is the number of squares of size $\epsilon$ needed to cover 
 $$\chi = k - h$$ ,
 the model analyzes the number of connected components $k$ and holes $h$ .
 - Information Entropy: Visual complexity is measured via Shannon entropy
-- $$H = -\sum p_i \log p_i$$ .
+$$H = -\sum p_i \log p_i$$ .
 Design aims for moderate entropy to avoid being too obvious or looking like noise.
 ## 💻 Simulation (Python)
 The project implements a Python simulation to generate inkblots through three core mathematical stages: 
