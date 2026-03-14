@@ -17,27 +17,39 @@ $$1.1 < D < 1.3$$
 
 or up to $1.6$
 - Calculation: The dimension is determined by 
- $$D =\lim_{\epsilon \to 0} \frac{\log N(\epsilon)}{\log(1/\epsilon)}$$ ,
+
+$$D =\lim_{\epsilon \to 0} \frac{\log N(\epsilon)}{\log(1/\epsilon)}$$ ,
+
 where $N(\epsilon)$ is the number of squares of size $\epsilon$ needed to cover the blot.
 - Cognitive Impact: This multi-scale structure makes the figure more complex than a line but less than a filled area, stimulating pattern recognition.
 ### 3. Probabilistic Perception & Topology
 - Bayesian Perception: Model the probability $P(s_i \mid B)$ of an observer seeing a specific object $s_i$ based on factors like symmetry, contrast, and experience.
 - Visual Attention: Eye-tracking experiments show that gaze fixations are symmetrically distributed around the central axis, with a correlation of $R^2 \approx 0.93$ .
 - Topological Invariants: Using the Euler characteristic
+
 $$\chi = k - h$$ ,
+
 the model analyzes the number of connected components $k$ and holes $h$ .
 - Information Entropy: Visual complexity is measured via Shannon entropy
+
 $$H = -\sum p_i \log p_i$$ .
+
 Design aims for moderate entropy to avoid being too obvious or looking like noise.
 ## 💻 Simulation (Python)
 The project implements a Python simulation to generate inkblots through three core mathematical stages: 
 1.	Random Field Generation: Simulating initial ink density using a normal distribution
+
 $$f(x,y) \sim \mathcal{N}(0,1)$$ .
+
 2.	Diffusion Modeling: Applying the diffusion equation
+
 $$\frac{\partial u}{\partial t} = D \nabla^2$$
+
 to simulate the spread of ink across paper.
 3.	Fractal Enhancement: Adding fractal noise $F(x,y)$ to create organic, multi-scale boundaries:
+
 $$u_{final} = u_{diffusion} + \alpha \cdot F(x,y)$$
+
 4.	Thresholding & Symmetry: Converting the field into a binary image via a threshold and applying a mirror transformation.
 ## Requirements
 To run the simulations, you will need:
