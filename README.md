@@ -18,7 +18,7 @@ $$1.1 < D < 1.3$$
 or up to $1.6$
 - Calculation: The dimension is determined by 
 
-$$D =\lim_{(\epsilon \to 0)} \frac{\log N(\epsilon)}{\log(1/\epsilon)}$$
+$$D =\lim_{\epsilon \to 0} \frac{\log N(\epsilon)}{\log(1/\epsilon)}$$
 
 where $N(\epsilon)$ is the number of squares of size $\epsilon$ needed to cover the blot.
 - Cognitive Impact: This multi-scale structure makes the figure more complex than a line but less than a filled area, stimulating pattern recognition.
