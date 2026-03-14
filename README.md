@@ -18,7 +18,7 @@ $$1.1 < D < 1.3$$
 or up to $1.6$
 - Calculation: The dimension is determined by 
 
-$$D =\lim_{\epsilon \to 0} \frac{\log N(\epsilon)}{\log(1/\epsilon)}$$ ,
+$$D =\lim_{(\epsilon \to 0} \frac{\log N(\epsilon)}{\log(1/\epsilon)}$$
 
 where $N(\epsilon)$ is the number of squares of size $\epsilon$ needed to cover the blot.
 - Cognitive Impact: This multi-scale structure makes the figure more complex than a line but less than a filled area, stimulating pattern recognition.
@@ -27,19 +27,19 @@ where $N(\epsilon)$ is the number of squares of size $\epsilon$ needed to cover 
 - Visual Attention: Eye-tracking experiments show that gaze fixations are symmetrically distributed around the central axis, with a correlation of $R^2 \approx 0.93$ .
 - Topological Invariants: Using the Euler characteristic
 
-$$\chi = k - h$$ ,
+$$\chi = k - h$$
 
 the model analyzes the number of connected components $k$ and holes $h$ .
 - Information Entropy: Visual complexity is measured via Shannon entropy
 
-$$H = -\sum p_i \log p_i$$ .
+$$H = -\sum p_i \log p_i$$
 
 Design aims for moderate entropy to avoid being too obvious or looking like noise.
 ## 💻 Simulation (Python)
 The project implements a Python simulation to generate inkblots through three core mathematical stages: 
 1.	Random Field Generation: Simulating initial ink density using a normal distribution
 
-$$f(x,y) \sim \mathcal{N}(0,1)$$ .
+$$f(x,y) \sim \mathcal{N}(0,1)$$
 
 2.	Diffusion Modeling: Applying the diffusion equation
 
