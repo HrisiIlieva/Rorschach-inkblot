@@ -33,9 +33,16 @@ The project implements a Python simulation to generate inkblots through three co
 $$
 f(x,y) \sim \mathcal{N}(0,1)
 $$.
-.	Diffusion Modeling: Applying the diffusion equation $$\frac{\partial u}{\partial t} = D \nabla^2$$ to simulate the spread of ink across paper.
-4.	Fractal Enhancement: Adding fractal noise $F(x,y)$ to create organic, multi-scale boundaries: $$u_{final} = u_{diffusion} + \alpha \cdot F(x,y)$$
-5.	Thresholding & Symmetry: Converting the field into a binary image via a threshold and applying a mirror transformation.
+2.	Diffusion Modeling: Applying the diffusion equation
+$$
+\frac{\partial u}{\partial t} = D \nabla^2
+$$
+to simulate the spread of ink across paper.
+3.	Fractal Enhancement: Adding fractal noise $F(x,y)$ to create organic, multi-scale boundaries:
+$$
+u_{final} = u_{diffusion} + \alpha \cdot F(x,y)
+$$
+4.	Thresholding & Symmetry: Converting the field into a binary image via a threshold and applying a mirror transformation.
 ## Requirements
 To run the simulations, you will need:
 - numpy
